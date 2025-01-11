@@ -48,6 +48,12 @@ function updateDisplay (single_value) {
     };
 };
 
+// Function to clear calculator display
+
+function clearDisplay() {
+    return input_field.innerHTML = "0";
+};
+
 
 // Selectors for all buttons and others
 
@@ -72,11 +78,15 @@ const button_equal = document.querySelector("#equal");
 
 const digit_click = document.querySelectorAll(".digit")
 
+const clear_click = document.querySelector("#clear")
+
 // Eventlisteners for all buttons with class digit
 
 digit_click.forEach((digit) => {
     digit.addEventListener("click", () => updateDisplay(digit.innerHTML))
 }) 
+
+clear_click.addEventListener("click", clearDisplay);
 
 // Storing Variables
 
