@@ -31,6 +31,8 @@ h1 {
 .input {
     color: white;
     padding: 15px 0px;
+    width: 100%;
+    text-align: center;
 }
 
 .buttons-body {

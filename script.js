@@ -56,7 +56,7 @@ function clearDisplay() {
 
 // Selectors for all buttons and others
 
-const input_field = document.querySelector("#input")
+const input_field = document.querySelector("#new-input")
 
 const button_clear = document.querySelector("#clear");
 const button_plus = document.querySelector("#plus");
