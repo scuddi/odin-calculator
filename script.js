@@ -54,7 +54,6 @@ function clearDisplay() {
     return input_field.innerHTML = "0";
 };
 
-
 // Selectors for all buttons and others
 
 const input_field = document.querySelector("#input")
