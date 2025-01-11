@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: roboto;
+}
+body {
+    font-family: Roboto sans-serif;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.calculator-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 4px;
+    background-color: #45433f;
+    width: 500px;
+    border-radius: 4px;
+    align-items: center;
+}
+
+.input {
+    color: white;
+    padding: 15px 0px;
+}
+
+.buttons-body {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.digit {
+    font-size: 20px;
+    padding: 5px 14px;
+    margin: 2px 4px;
+}
