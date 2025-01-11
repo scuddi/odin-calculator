@@ -58,7 +58,8 @@ function operatorClicked (operator_clicked) {
 // Function to clear calculator display
 
 function clearDisplay() {
-    return input_field.innerHTML = "0";
+    last_input.innerHTML = "";
+    input_field.innerHTML = "0";
 };
 
 // Selectors for all buttons and others
