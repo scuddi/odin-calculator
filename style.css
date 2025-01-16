@@ -29,12 +29,15 @@ h1 {
 }
 
 .input {
+    display: flex;
+    justify-content: right;
     color: white;
     padding: 15px 0px;
-    width: 100%;
-    text-align: right;
-    padding-right: 20px;
+    width: 95%;
+    /* text-align: right; */
 }
+
+
 
 
 .buttons-body {
@@ -59,4 +62,10 @@ h1 {
     font-size: 20px;
     padding: 5px 14px;
     margin: 2px 4px;
+}
+
+.equal {
+    font-size: 20px;
+    padding: 5px 14px;
+    margin: 2px 4px; 
 }
