@@ -66,6 +66,7 @@ function clearDisplay() {
 
 const input_field = document.querySelector("#new-input")
 const last_input = document.querySelector("#last-input")
+const equal = document.querySelector("equal")
 
 const button_clear = document.querySelector("#clear");
 const button_plus = document.querySelector("#plus");
