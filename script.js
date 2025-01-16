@@ -52,21 +52,24 @@ function updateDisplay (single_value) {
 
 function operatorClicked (operator_clicked) {
     last_input.innerHTML = input_field.innerHTML;
-    input_field.innerHTML = operator_clicked;
-}
+    input_field.innerHTML = "";
+    operator_field.innerHTML = operator_clicked;
+};
 
 // Function to clear calculator display
 
 function clearDisplay() {
     last_input.innerHTML = "";
     input_field.innerHTML = "0";
+    operator_field.innerHTML = "";
 };
 
 // Selectors for all buttons and others
 
 const input_field = document.querySelector("#new-input")
 const last_input = document.querySelector("#last-input")
-const equal = document.querySelector("equal")
+const operator_field = document.querySelector("#operator-store")
+const equal = document.querySelector("#equal")
 
 const button_clear = document.querySelector("#clear");
 const button_plus = document.querySelector("#plus");

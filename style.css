@@ -42,7 +42,7 @@ h1 {
 
 .input {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     padding: 15px 0px;
 }
 
