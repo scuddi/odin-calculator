@@ -28,8 +28,21 @@ h1 {
     align-items: center;
 }
 
-.input {
+.display {
+    display: flex;
+    flex-direction: column;
     color: white;
+    width: 95%;
+}
+
+.last-input {
+    display: flex;
+    justify-content: right;
+}
+
+.input {
+    display: flex;
+    justify-content: right;
     padding: 15px 0px;
 }
 
@@ -37,6 +50,12 @@ h1 {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.general-button {
+    font-size: 20px;
+    padding: 5px 14px;
+    margin: 2px 4px;
 }
 
 .digit {
@@ -49,4 +68,10 @@ h1 {
     font-size: 20px;
     padding: 5px 14px;
     margin: 2px 4px;
+}
+
+.equal {
+    font-size: 20px;
+    padding: 5px 14px;
+    margin: 2px 4px; 
 }
