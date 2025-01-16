@@ -28,17 +28,23 @@ h1 {
     align-items: center;
 }
 
+.display {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    width: 95%;
+}
+
+.last-input {
+    display: flex;
+    justify-content: right;
+}
+
 .input {
     display: flex;
     justify-content: right;
-    color: white;
     padding: 15px 0px;
-    width: 95%;
-    /* text-align: right; */
 }
-
-
-
 
 .buttons-body {
     display: flex;
