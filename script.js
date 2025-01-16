@@ -24,20 +24,6 @@ function divide(a, b) {
     return a / b;
 };
 
-// Operate function
-
-function operate (operator, num1, num2) {
-    if (operator === "+") {
-        return add(num1, num2);
-    } else  if (operator === "-") {
-        return subtract(num1, num2);
-    } else if (operator === "*") {
-        return multiply(num1, num2);
-    } else {
-        return divide(num1, num2);
-    };
-};
-
 // Function to update calculator display
 
 function updateDisplay (single_value) {
@@ -64,18 +50,34 @@ function clearDisplay() {
     operator_field.innerHTML = "";
 };
 
+// Operate function
+
+function equal() {
+
+};
+
+function operate (operator, num1, num2) {
+    if (operator === "+") {
+        return add(num1, num2);
+    } else  if (operator === "-") {
+        return subtract(num1, num2);
+    } else if (operator === "*") {
+        return multiply(num1, num2);
+    } else {
+        return divide(num1, num2);
+    };
+};
+
 // Selectors for all buttons and others
 
 const input_field = document.querySelector("#new-input")
 const last_input = document.querySelector("#last-input")
 const operator_field = document.querySelector("#operator-store")
-const equal = document.querySelector("#equal")
 
 const button_clear = document.querySelector("#clear");
 const button_plus = document.querySelector("#plus");
 const button_minus = document.querySelector("#minus");
 const button_multiply = document.querySelector("#multiply");
-const button_equal = document.querySelector("#equal");
 
 // Probably not needed because of Eventlisteners for all digits below
 // const button_1 = document.querySelector("#b1")
@@ -94,6 +96,8 @@ const operator_click = document.querySelectorAll(".operator");
 
 const clear_click = document.querySelector("#clear");
 
+const equal_click = document.querySelector("#equal");
+
 // Eventlisteners for all buttons with class digit
 
 digit_click.forEach((digit) => {
@@ -105,6 +109,8 @@ operator_click.forEach((operator) => {
 });
 
 clear_click.addEventListener("click", clearDisplay);
+
+equal_click.addEventListener("click", equal);
 
 // Storing Variables
 
