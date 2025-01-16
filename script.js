@@ -53,7 +53,11 @@ function clearDisplay() {
 // Operate function
 
 function equal() {
+    var_1 = Number(last_input.innerHTML);
+    var_2 = Number(input_field.innerHTML);
+    operator = operator_field.innerHTML;
 
+    operate(operator, var_1, var_2)
 };
 
 function operate (operator, num1, num2) {
