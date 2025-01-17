@@ -24,7 +24,7 @@ h1 {
     padding: 15px 4px;
     background-color: #45433f;
     width: 500px;
-    border-radius: 4px;
+    border-radius: 10px;
     align-items: center;
     font-size: 25px;
 }
@@ -37,17 +37,21 @@ h1 {
     background-color: #504d49;
     border-radius: 7px;
     padding: 0px 5px;
+    height: 90px;
 }
 
 .last-input {
     display: flex;
     justify-content: right;
+    min-height: 30px;
+    padding-top: 5px;
 }
 
 .input {
     display: flex;
     justify-content: space-between;
     padding: 15px 0px;
+    min-height: 30px;
 }
 
 .buttons-body {
@@ -55,6 +59,10 @@ h1 {
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 10px;
+}
+
+button {
+    
 }
 
 .general-button {
