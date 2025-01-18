@@ -7,7 +7,7 @@ This is the calculator project of the The Odin Project. (See: [Project Calculato
 
 ## Checkout my live demo:
 
-[Live demo]([https://duckduckgo.com](https://scuddi.github.io/odin-calculator/))
+[Live demo](https://scuddi.github.io/odin-calculator/)
 
 ## Own-todos: 
 
