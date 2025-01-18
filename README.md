@@ -11,5 +11,5 @@ This is the calculator project of the The Odin Project. (See: [Project Calculato
 
 ## Own-todos: 
 
-[] What happens when operator is pressed two times in a row
-[] What happens when someone just presses digits while there is "=" in the operator_field
+[ ] What happens when operator is pressed two times in a row
+[ ] What happens when someone just presses digits while there is "=" in the operator_field
