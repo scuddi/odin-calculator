@@ -62,29 +62,52 @@ h1 {
 }
 
 button {
-    
+    border-radius: 15px;
+    border-color: black;
+    border-width: 2px;
 }
 
 .general-button {
     font-size: 20px;
     padding: 5px 14px;
     margin: 2px 4px;
+    background-color: #ff9f0a;
+}
+
+.general-button:hover {
+    background-color:#ffbc58
 }
 
 .digit {
     font-size: 20px;
     padding: 5px 14px;
     margin: 2px 4px;
+    background-color: rgb(230, 211, 187);
 }
+
+.digit:hover {
+    background-color: rgb(238, 238, 238);
+}
+
 
 .operator {
     font-size: 20px;
     padding: 5px 14px;
     margin: 2px 4px;
+    background-color: #ff9f0a;
+}
+
+.operator:hover {
+    background-color:#ffbc58
 }
 
 .equal {
     font-size: 20px;
     padding: 5px 14px;
-    margin: 2px 4px; 
+    margin: 2px 4px;
+    background-color: #ff9f0a;
+}
+
+.equal:hover {
+    background-color:#ffbc58
 }
