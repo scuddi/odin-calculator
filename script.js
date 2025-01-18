@@ -60,7 +60,7 @@ function equal() {
     var result = operate(operator, var_1, var_2);
     last_input.innerHTML = input_field.innerHTML;
     input_field.innerHTML = result;
-    operator_field.innerHTML = "";
+    operator_field.innerHTML = "=";
 };
 
 function operate (operator, num1, num2) {
