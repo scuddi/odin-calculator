@@ -5,6 +5,7 @@
 }
 body {
     font-family: Roboto sans-serif;
+    background-color: rgb(179, 164, 145);
 }
 
 h1 {
@@ -26,7 +27,7 @@ h1 {
     width: 500px;
     border-radius: 10px;
     align-items: center;
-    font-size: 25px;
+    font-size: 40px;
 }
 
 .display {
@@ -37,7 +38,7 @@ h1 {
     background-color: #504d49;
     border-radius: 7px;
     padding: 0px 5px;
-    height: 90px;
+    height: 120px;
 }
 
 .last-input {
@@ -61,30 +62,47 @@ h1 {
     padding-top: 10px;
 }
 
+/* Button styling */
+
 button {
-    
+    border-radius: 15px;
+    border-color: black;
+    border-width: 2px;
+    font-size: 45px;
+    padding: 5px 14px;
+    margin: 2px 4px;
+    width: 23%;
 }
 
 .general-button {
-    font-size: 20px;
-    padding: 5px 14px;
-    margin: 2px 4px;
+    background-color: #ff9f0a;
+}
+
+.general-button:hover {
+    background-color:#ffbc58
 }
 
 .digit {
-    font-size: 20px;
-    padding: 5px 14px;
-    margin: 2px 4px;
+    background-color: rgb(230, 211, 187);
 }
 
+.digit:hover {
+    background-color: rgb(238, 238, 238);
+}
+
+
 .operator {
-    font-size: 20px;
-    padding: 5px 14px;
-    margin: 2px 4px;
+    background-color: #ff9f0a;
+}
+
+.operator:hover {
+    background-color:#ffbc58
 }
 
 .equal {
-    font-size: 20px;
-    padding: 5px 14px;
-    margin: 2px 4px; 
+    background-color: #ff9f0a;
+}
+
+.equal:hover {
+    background-color:#ffbc58
 }
