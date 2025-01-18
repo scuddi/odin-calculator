@@ -37,9 +37,13 @@ function updateDisplay (single_value) {
 // Function when operator is clicked
 
 function operatorClicked (operator_clicked) {
-    last_input.innerHTML = input_field.innerHTML;
-    input_field.innerHTML = "";
-    operator_field.innerHTML = operator_clicked;
+    if (operator_field.innerHTML === "") {
+        last_input.innerHTML = input_field.innerHTML;
+        input_field.innerHTML = "";
+        operator_field.innerHTML = operator_clicked;
+    } else {
+        
+    }
 };
 
 // Function to clear calculator display
