@@ -86,17 +86,6 @@ const button_plus = document.querySelector("#plus");
 const button_minus = document.querySelector("#minus");
 const button_multiply = document.querySelector("#multiply");
 
-// Probably not needed because of Eventlisteners for all digits below
-// const button_1 = document.querySelector("#b1")
-// const button_2 = document.querySelector("#b2")
-// const button_3 = document.querySelector("#b3")
-// const button_4 = document.querySelector("#b4")
-// const button_5 = document.querySelector("#b5")
-// const button_6 = document.querySelector("#b6")
-// const button_7 = document.querySelector("#b7")
-// const button_8 = document.querySelector("#b8")
-// const button_9 = document.querySelector("#b9")
-
 const digit_click = document.querySelectorAll(".digit");
 
 const operator_click = document.querySelectorAll(".operator");
