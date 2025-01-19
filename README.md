@@ -7,7 +7,7 @@ This is the calculator project of the The Odin Project. (See: [Project Calculato
 In this project the aim is to build a web calculator with HTML, CSS and JavaScript. All requirements the calculator should fulfill can be seen
 under assignements in the link above.
 
-## Checkout my live demo:
+## Check out my live demo:
 
 <a href="https://scuddi.github.io/odin-calculator/" target="_blank">Live Demo</a>
 
