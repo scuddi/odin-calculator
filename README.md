@@ -13,5 +13,5 @@ under assignements in the link above.
 
 ## Own ToDos: 
 
-[ ] Error handling: Operator (+, -, *, /, =) is pressed two times in a row
-[ ] Error handling: User presses digits after equal operation instead of the next operator he wants to do
+- [ ] Error handling: Operator (+, -, *, /, =) is pressed two times in a row
+- [ ] Error handling: User presses digits after equal operation instead of the next operator he wants to do
