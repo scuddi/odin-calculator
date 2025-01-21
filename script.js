@@ -70,17 +70,21 @@ function clearDisplay() {
 // Operate function
 
 function equal() {
-    var_1 = currentResult ?? Number(last_input.innerHTML);
-    var_2 = Number(input_field.innerHTML);
-    operator = operator_field.innerHTML;
+    if (last_input.innerHTML === "" && operator_field.innerHTML === "") {
+        operator_field.innerHTML = "=";
+    } else {
+        var_1 = currentResult ?? Number(last_input.innerHTML);
+        var_2 = Number(input_field.innerHTML);
+        operator = operator_field.innerHTML;
 
-    var result = operate(operator, var_1, var_2);
-    result = Number(result.toFixed(4)); // Number(...) is used so that only if more than 4 decimals exists it is rounded
-    currentResult = result;
-    last_input.innerHTML = input_field.innerHTML;
-    input_field.innerHTML = result;
-    operator_field.innerHTML = "=";
-    isOperatorChained = false;
+        var result = operate(operator, var_1, var_2);
+        result = Number(result.toFixed(4)); // Number(...) is used so that only if more than 4 decimals exists it is rounded
+        currentResult = result;
+        last_input.innerHTML = input_field.innerHTML;
+        input_field.innerHTML = result;
+        operator_field.innerHTML = "=";
+        isOperatorChained = false;
+    };
 };
 
 function operate (operator, num1, num2) {
