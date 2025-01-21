@@ -75,6 +75,7 @@ function equal() {
     operator = operator_field.innerHTML;
 
     var result = operate(operator, var_1, var_2);
+    result = Number(result.toFixed(4));
     currentResult = result;
     last_input.innerHTML = input_field.innerHTML;
     input_field.innerHTML = result;
