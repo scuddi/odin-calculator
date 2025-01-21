@@ -1,5 +1,9 @@
 // Functionality for the calculator
 
+// Error messages
+
+let divideByZero = "You can't do that fam..."
+
 // Variables for math operations
 
 let var_1;
@@ -26,7 +30,11 @@ function multiply(a, b) {
 };
 
 function divide(a, b) {
-    return a / b;
+    if (b === 0) {
+        alert("I see why you need a calculator. Maybe watch this first: \n\nhttps://youtu.be/NKmGVE85GUU?si=zI2cN7VcN8DsxhXz");
+    } else {
+        return a / b;
+    };
 };
 
 // Function to update calculator display
