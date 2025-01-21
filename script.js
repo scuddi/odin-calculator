@@ -75,7 +75,7 @@ function equal() {
     operator = operator_field.innerHTML;
 
     var result = operate(operator, var_1, var_2);
-    result = Number(result.toFixed(4));
+    result = Number(result.toFixed(4)); // Number(...) is used so that only if more than 4 decimals exists it is rounded
     currentResult = result;
     last_input.innerHTML = input_field.innerHTML;
     input_field.innerHTML = result;
