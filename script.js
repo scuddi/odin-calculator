@@ -6,6 +6,11 @@ let var_1;
 let var_2;
 let operator;
 
+// Storing variables
+
+let currentResult = null;
+let isOperatorChained = false;
+
 // Basic mathematical functions
 
 function add(a, b) {
@@ -37,9 +42,19 @@ function updateDisplay (single_value) {
 // Function when operator is clicked
 
 function operatorClicked (operator_clicked) {
-    last_input.innerHTML = input_field.innerHTML;
-    input_field.innerHTML = "";
+    if (isOperatorChained && last_input.innerHTML !== "") {
+        var_1 = currentResult ?? Number(last_input.innerHTML);
+        var_2 = Number(input_field.innerHTML);
+        currentResult = operate(operator, var_1, var_2);
+        last_input.innerHTML = currentResult;
+        input_field.innerHTML = "";
+    } else {
+        last_input.innerHTML = input_field.innerHTML;
+        input_field.innerHTML = "";
+    }
     operator_field.innerHTML = operator_clicked;
+    operator = operator_clicked;
+    isOperatorChained = true;
 };
 
 // Function to clear calculator display
@@ -48,19 +63,24 @@ function clearDisplay() {
     last_input.innerHTML = "";
     input_field.innerHTML = "0";
     operator_field.innerHTML = "";
+    currentResult = null;
+    isOperatorChained = false;
 };
 
 // Operate function
 
 function equal() {
-    var_1 = Number(last_input.innerHTML);
+    var_1 = currentResult ?? Number(last_input.innerHTML);
     var_2 = Number(input_field.innerHTML);
     operator = operator_field.innerHTML;
 
     var result = operate(operator, var_1, var_2);
+    result = Number(result.toFixed(4)); // Number(...) is used so that only if more than 4 decimals exists it is rounded
+    currentResult = result;
     last_input.innerHTML = input_field.innerHTML;
     input_field.innerHTML = result;
     operator_field.innerHTML = "=";
+    isOperatorChained = false;
 };
 
 function operate (operator, num1, num2) {
@@ -85,17 +105,6 @@ const button_clear = document.querySelector("#clear");
 const button_plus = document.querySelector("#plus");
 const button_minus = document.querySelector("#minus");
 const button_multiply = document.querySelector("#multiply");
-
-// Probably not needed because of Eventlisteners for all digits below
-// const button_1 = document.querySelector("#b1")
-// const button_2 = document.querySelector("#b2")
-// const button_3 = document.querySelector("#b3")
-// const button_4 = document.querySelector("#b4")
-// const button_5 = document.querySelector("#b5")
-// const button_6 = document.querySelector("#b6")
-// const button_7 = document.querySelector("#b7")
-// const button_8 = document.querySelector("#b8")
-// const button_9 = document.querySelector("#b9")
 
 const digit_click = document.querySelectorAll(".digit");
 
